@@ -20,6 +20,9 @@
   * [Web服务器](exporter/webserver/README.md)
     * [Nginx](exporter/webserver/nginx_module_vts.md)
     * [Tomcat](exporter/webserver/jmx_exporter.md)
+  * [数据库](database/README.md)
+    * [MySQL](database/mysqld_exporter.md)
+    * [Redis](database/redis_exporter.md)
 * [第五章 告警规则](alert/README.md)
 * [第六章 告警处理](alertmanager/README.md)
 
