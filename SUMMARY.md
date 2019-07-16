@@ -16,13 +16,24 @@
 ### Part II - Prometheus数据采集与告警
 
 * [第四章 数据采集](exporter/README.md)
-  * [主机](exporter/node_exporter.md)
+  * [主机](exporter/node/README.md)
+    * [Linux](exporter/node/node_exporter.md)
+    * [Windows](exporter/node/wmi_exporter.md)
+    * [Docker](exporter/node/cadvisor.md)
   * [Web服务器](exporter/webserver/README.md)
     * [Nginx](exporter/webserver/nginx_module_vts.md)
     * [Tomcat](exporter/webserver/jmx_exporter.md)
   * [数据库](exporter/database/README.md)
     * [MySQL](exporter/database/mysqld_exporter.md)
     * [Redis](exporter/database/redis_exporter.md)
+  * [消息队列]
+    * [RabbitMQ]
+    * [Kafka]
+  * [微服务]
+    * [Eureka]
+    * [Nacos]
+    * [Zookeeper]
+    * [Consul]
 * [第五章 告警规则](alert/README.md)
 * [第六章 告警处理](alertmanager/README.md)
 
