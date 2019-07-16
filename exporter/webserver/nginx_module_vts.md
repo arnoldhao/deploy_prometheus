@@ -25,6 +25,9 @@ useradd参数
 - -M：不要自动简历用户的登入目录
 - -g：指定用户所属的群组，也可以跟GID
 - -s：指定用户登入后所使用的shell，默认为/bin/bash
+
+
+
 ```
 groupadd nginx
 useradd -M -g nginx -s /sbin/nologin nginx
