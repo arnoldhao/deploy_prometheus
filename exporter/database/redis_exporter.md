@@ -14,8 +14,7 @@ cat /etc/redis.conf | grep -v '#' | grep requirepass
 # 下载
 cd /tmp 
 wget https://github.com/oliver006/redis_exporter/releases/download/v1.0.3/redis_exporter-v1.0.3.linux-amd64.tar.gz
-tar xvf redis_exporter-v1.0.3.linux-amd64.tar.gz
-mv xvf redis_exporter-v1.0.3.linux-amd64 /redis_exporter
+tar xvf redis_exporter-v1.0.3.linux-amd64.tar.gz -C /ops
 
 # 编写systemd service文件
 vi /usr/lib/systemd/system/redis_exporter.service
@@ -25,7 +24,7 @@ Description=Redis exporter
 
 [Service]
 Type=simple
-ExecStart=/redis_exporter/redis_exporter --redis.password=密码
+ExecStart=/ops/redis_exporter-v1.0.3.linux-amd64/redis_exporter --redis.password=密码
 
 [Install]
 WantedBy=mutil-user.target

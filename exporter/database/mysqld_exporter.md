@@ -12,8 +12,7 @@ GRANT PROCESS, REPLICATION CLIENT, SELECT ON *.* TO 'exporter'@'localhost';
 # 下载
 cd /tmp
 wget https://github.com/prometheus/mysqld_exporter/releases/download/v0.12.0/mysqld_exporter-0.12.0.linux-amd64.tar.gz
-tar xvf mysqld_exporter-0.12.0.linux-amd64.tar.gz
-mv mysqld_exporter-0.12.0.linux-amd64 /mysqld_exporter
+tar xvf mysqld_exporter-0.12.0.linux-amd64.tar.gz -C /ops
 
 # 编写systemd service 文件
 vi /usr/lib/systemd/system/mysqld_exporter.service 
@@ -24,7 +23,7 @@ After=network.target
 [Service]
 Type=simple
 Environment=DATA_SOURCE_NAME=exporter:exporter@(localhost:3306)/
-ExecStart=/mysqld_exporter/mysqld_exporter --web.listen-address=:9104
+ExecStart=/ops/mysqld_exporter-0.12.0.linux-amd64/mysqld_exporter --web.listen-address=:9104
 Restart=on-failure
 [Install]
 WantedBy=multi-user.target
