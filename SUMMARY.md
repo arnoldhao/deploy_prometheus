@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [全书组织](README.md)
 
 ### Part I - Prometheus基础
 
