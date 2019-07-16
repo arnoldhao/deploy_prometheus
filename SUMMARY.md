@@ -26,14 +26,14 @@
   * [数据库](exporter/database/README.md)
     * [MySQL](exporter/database/mysqld_exporter.md)
     * [Redis](exporter/database/redis_exporter.md)
-  * [消息队列]
-    * [RabbitMQ]
-    * [Kafka]
-  * [微服务]
-    * [Eureka]
-    * [Nacos]
-    * [Zookeeper]
-    * [Consul]
+  * [消息队列](exporter/mq/README.md)
+    * [RabbitMQ](exporter/mq/rabbitmq.md)
+    * [Kafka](exporter/mq/kafka.md)
+  * [微服务](exporter/microservice/README.md)
+    * [Eureka](exporter/microservice/eureka.md)
+    * [Nacos](exporter/microservice/nacos.md)
+    * [Zookeeper](exporter/microservice/zookeeper.md)
+    * [Consul](exporter/microservice/consul.md)
 * [第五章 告警规则](alert/README.md)
 * [第六章 告警处理](alertmanager/README.md)
 
