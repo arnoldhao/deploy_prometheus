@@ -1,4 +1,4 @@
-# ## 为什么会有本书？
+## 为什么会有本书？
 
 Prometheus是一款优秀的监控平台，而平时最常见的组合是Prometheus+Alertmanager+Grafana。
 
