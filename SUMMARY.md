@@ -1,6 +1,6 @@
 # Summary
 
-* [全书组织](README.md)
+* [为什么会有本书](README.md)
 
 ### Part I - Prometheus基础
 
