@@ -115,3 +115,14 @@ quay.io/prometheus/prometheus \
 docker ps | grep prometheus | awk '{print $1}' | xargs docker restart
 ```
 
+
+
+#### 防火墙
+
+对外映射的端口为9090，外部可使用`ip:9090`的方式来访问，这时防火墙需放行此端口：
+
+```
+firewall-cmd --add-port=9090/tcp --permanent
+firewall-cmd --reload
+```
+
